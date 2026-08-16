@@ -46,3 +46,15 @@ The broader smart helmet system was designed with several additional safety feat
 | **Active Buzzer** | Generates an audible alert when triggered by the proximity sensor |
 | **Breadboard and Jumper Wires** | Used for prototyping and hardware connections |
 | **Power Supply** | Provides power to the prototype hardware |
+
+## Hardware Prototype
+
+The system was developed and tested as a physical proof-of-concept prototype using an STM32 development board, MPU6050 motion sensor, ST12-3004PA inductive proximity sensor, active buzzer, and breadboard-based connections.
+
+### Prototype Setup
+
+![Smart Helmet Hardware Prototype](images/hardware_protoype1.jpg)
+
+### Sensor and Circuit Setup
+
+![Smart Helmet Sensor Setup](images/hardware_prototype2.jpg)
