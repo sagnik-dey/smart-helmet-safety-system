@@ -110,3 +110,64 @@ The flowchart below represents this proposed full-system workflow.
 > **Note:** GPS, emergency communication, ignition interlocking, and automatic accident response were conceptual/proposed features and are not claimed as implemented functionality in this repository.
 
 ![Proposed Smart Helmet System Flowchart](docs/proposed_system_flowchart.png)
+
+## Code Overview
+
+The firmware interfaces with the MPU6050 using the `Wire`, `Adafruit_MPU6050`, and `Adafruit_Sensor` libraries.
+
+The program performs the following operations:
+
+- Initializes serial communication
+- Configures the buzzer and inductive sensor GPIO pins
+- Initializes and configures the MPU6050
+- Reads real-time accelerometer and gyroscope data
+- Reads the state of the inductive proximity sensor
+- Activates the buzzer when a metallic object is detected
+- Continuously repeats the monitoring process
+
+The source code is available here:
+
+[`smart_helmet.ino`](code/smart_helmet.ino)
+
+## Technical Documentation
+
+An unpublished technical paper prepared as part of this academic project is included in the repository.
+
+The paper discusses the broader smart helmet safety concept, system architecture, and proposed extensions beyond the implemented prototype.
+
+> **Note:** Some features discussed in the technical paper, including ignition control, GPS-based tracking, emergency communication, and accident-response functionality, were proposed or simulated concepts and were not implemented in the physical prototype.
+
+[View the Project Technical Paper](docs/project_technical_paper.pdf)
+
+## Project Structure
+
+```text
+smart-helmet-safety-system/
+│
+├── README.md
+│
+├── code/
+│   └── smart_helmet.ino
+│
+├── docs/
+│   ├── block_diagram.png
+│   ├── proposed_system_flowchart.png
+│   └── project_technical_paper.pdf
+│
+└── images/
+    ├── hardware_prototype_1.jpg
+    └── hardware_prototype_2.jpg
+```
+
+## Future Improvements
+
+Potential extensions for the project include:
+
+- Implementing calibrated impact-detection thresholds using MPU6050 data
+- Integrating reliable helmet-wearing detection
+- Adding a relay-based motorcycle ignition interlock
+- Adding GPS for location tracking
+- Integrating GSM or Bluetooth communication for emergency alerts
+- Designing a dedicated PCB instead of a breadboard prototype
+- Improving power management for battery-operated deployment
+- Integrating the prototype into an actual helmet for real-world testing
