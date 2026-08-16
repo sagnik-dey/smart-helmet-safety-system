@@ -58,3 +58,9 @@ The system was developed and tested as a physical proof-of-concept prototype usi
 ### Sensor and Circuit Setup
 
 ![Smart Helmet Sensor Setup](images/hardware_protoype_2.jpg)
+
+## System Architecture
+
+The implemented prototype uses two sensors connected to the STM32 microcontroller. The MPU6050 provides motion data, while the ST12-3004PA inductive proximity sensor detects nearby metallic objects. Based on the sensor input, the microcontroller controls the buzzer output.
+
+![System Block Diagram](docs/blockdiag.png)
