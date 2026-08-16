@@ -35,3 +35,14 @@ The broader smart helmet system was designed with several additional safety feat
 - GPS-based location tracking
 - GSM or Bluetooth-based emergency notification
 - Automatic alerts to predefined emergency contacts
+
+## Hardware Components
+
+| Component | Role |
+|---|---|
+| **STM32 Development Board** | Central microcontroller used for sensor interfacing and control |
+| **MPU6050** | Provides accelerometer and gyroscope data for motion monitoring |
+| **ST12-3004PA Inductive Proximity Sensor** | Detects nearby metallic objects |
+| **Active Buzzer** | Generates an audible alert when triggered by the proximity sensor |
+| **Breadboard and Jumper Wires** | Used for prototyping and hardware connections |
+| **Power Supply** | Provides power to the prototype hardware |
