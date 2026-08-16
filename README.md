@@ -139,26 +139,6 @@ The paper discusses the broader smart helmet safety concept, system architecture
 
 [View the Project Technical Paper](docs/project_technical_paper.pdf)
 
-## Project Structure
-
-```text
-smart-helmet-safety-system/
-│
-├── README.md
-│
-├── code/
-│   └── smart_helmet.ino
-│
-├── docs/
-│   ├── block_diagram.png
-│   ├── proposed_system_flowchart.png
-│   └── project_technical_paper.pdf
-│
-└── images/
-    ├── hardware_prototype_1.jpg
-    └── hardware_prototype_2.jpg
-```
-
 ## Future Improvements
 
 Potential extensions for the project include:
