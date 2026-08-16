@@ -95,3 +95,18 @@ Metal Object Detected?
               ↓
        Continue Monitoring
 ```
+## Proposed Smart Helmet System
+
+The project was initially conceptualized as a broader motorcycle safety system. The following features were included in the proposed architecture but were not implemented in the physical prototype:
+
+- Helmet-wearing verification
+- Motorcycle ignition control using a relay
+- Accident detection based on sensor thresholds
+- GPS location retrieval
+- Emergency alerts to predefined contacts
+
+The flowchart below represents this proposed full-system workflow.
+
+> **Note:** GPS, emergency communication, ignition interlocking, and automatic accident response were conceptual/proposed features and are not claimed as implemented functionality in this repository.
+
+![Proposed Smart Helmet System Flowchart](docs/proposed_system_flowchart.png)
