@@ -64,3 +64,34 @@ The system was developed and tested as a physical proof-of-concept prototype usi
 The implemented prototype uses two sensors connected to the STM32 microcontroller. The MPU6050 provides motion data, while the ST12-3004PA inductive proximity sensor detects nearby metallic objects. Based on the sensor input, the microcontroller controls the buzzer output.
 
 ![System Block Diagram](docs/blockdiag.png)
+
+## Working Principle
+
+The prototype operates through continuous sensor monitoring:
+
+1. The STM32 initializes the connected sensors and output devices.
+2. The MPU6050 provides real-time accelerometer and gyroscope data for motion monitoring.
+3. The ST12-3004PA inductive proximity sensor continuously checks for the presence of a nearby metallic object.
+4. The sensor state is read by the microcontroller.
+5. When a metallic object is detected, the STM32 activates the active buzzer.
+6. The buzzer remains active for the programmed alert duration and is then turned off.
+7. The system continues monitoring the sensors in a continuous loop.
+
+### Implemented Control Flow
+
+```text
+Start
+  ↓
+Initialize STM32, MPU6050 and Buzzer
+  ↓
+Read MPU6050 Motion Data
+  ↓
+Read Inductive Proximity Sensor
+  ↓
+Metal Object Detected?
+   ├── Yes → Activate Buzzer
+   │
+   └── No  → Keep Buzzer OFF
+              ↓
+       Continue Monitoring
+```
