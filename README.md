@@ -53,8 +53,8 @@ The system was developed and tested as a physical proof-of-concept prototype usi
 
 ### Prototype Setup
 
-![Smart Helmet Hardware Prototype](images/hardware_protoype1.jpg)
+![Smart Helmet Hardware Prototype](images/hardware_protoype_1.jpg)
 
 ### Sensor and Circuit Setup
 
-![Smart Helmet Sensor Setup](images/hardware_prototype2.jpg)
+![Smart Helmet Sensor Setup](images/hardware_protoype_2.jpg)
